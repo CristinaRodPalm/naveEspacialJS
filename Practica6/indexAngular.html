@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practica 6 Angular</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="script/angular.min.js" type="text/javascript"></script>
+        <script src="script/P6_angular.js" type="text/javascript"></script>
+
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>      
+    </head>
+    <body>
+        <div ng-app="app" ng-controller="controller" 
+             class="container col-lg-12 row-lg-12">
+            
+            <div class="row-lg-12 col-lg-12">
+                <div ng-repeat="numero in arrayNumeros">{{numero}}</div>
+            </div>
+
+            
+            <div class="btn btn-info col-lg-1" ng-click="primerUltimoNumero()">Primer y último número</div>
+            <div class="btn btn-info col-lg-1" ng-click="addNumeroFinal()">Añadir número al final</div>
+            <div class="btn btn-info col-lg-1" ng-click="addNumeroInicio()">Añadir número al inicio</div>
+
+            
+            <div class="btn btn-info col-lg-1" ng-click="deleteNumeroFinal()">Borrar último número</div>
+            <div class="btn btn-info col-lg-1" ng-click="deleteNumeroInicio()">Borrar primer número</div>
+            <div class="btn btn-info col-lg-1" ng-click="calcular()">Calcular</div>
+
+            
+            <div class="btn btn-info col-lg-1" ng-click="borrarPosicion()">Borrar posición concreta</div>
+            <div class="btn btn-info col-lg-1" ng-click="borrarNumero()">Borrar número concreto</div>
+
+            <div>
+                {{resultado}}
+            </div>
+            
+        </div>
+    </body>
+</html>
