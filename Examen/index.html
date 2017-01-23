@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Practica 5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="script/jquery-3.1.1.js" type="text/javascript"></script>
+        
+        <script src="script/Practica5.js" type="text/javascript"></script>
+        
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script src="script/hittest.js" type="text/javascript"></script>
+
+        
+        <style>
+            #espacio{
+                background-color: black;
+                height: 500px;
+                width: 1000px;
+                position: relative;
+                overflow: hidden;
+                margin-top: 10px;
+                left: 0px;
+                display: none;
+            }
+            #nave{
+                margin-top: 200px;
+                height: 100px;
+                width: 200px;;
+            }
+            #login{
+                position: relative;
+            }
+            #escudo{
+                background-color: green;
+                width:200px;
+                height:30px;
+            }
+            #start, #change{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="page-header" id="header">
+            <h1> Nau espacial en jQuery </h1>
+        </div>
+        
+        <div class="container row-lg-6 col-lg-12">
+
+            <div id="info" class="row">
+                <div class="form-group form-inline row-lg-6">
+                    Usuario: <input type="text" class="form-control" id="name" placeholder="Nombre de usuario">
+                    <div class="btn btn-default" id="login">Login</div>    
+                </div>
+                <div>
+                    <div class="btn btn-info col-lg-1" id="start">Start</div>
+                    <div class="btn btn-info col-lg-1" id="change">Change Ship</div>
+
+                    
+                    
+                    <div class="col-lg-4">
+                        <div class="col-lg-2">Puntuación:</div>
+                        <div class="col-lg-2" id="puntuacion">0</div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="col-lg-2">Escudo:</div>
+                        <div class="col-lg-2" id="escudo"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="espacio" class="row">
+            </div>
+            <br/>
+            <div class="row" id="listaUsuarios">
+            </div>
+    </body>
+</html>
